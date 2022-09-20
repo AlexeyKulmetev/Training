@@ -14,17 +14,18 @@ t_Pair modify_pair_variable(t_Pair pair) {
 }
 
 int main() {
-
 	t_Pair pair;
 	t_Pair modified;
 
-	pair.a = 3;
-	pair.b = 4;
+	printf("Enter ""a"" field of pair: ");
+	scanf("%d", &pair.a);
+
+	printf("Enter ""b"" field of pair: ");
+	scanf("%d", &pair.b);
 
 	printf("Field ""a"" of pair = %d\nField ""b"" of pair = %d", pair.a, pair.b);
 
 	modified = modify_pair_variable(pair);
 
-	//...
-
+	printf("Field ""a"" of pair = %d\nField ""b"" of pair = %d", pair.a, pair.b);
 }
